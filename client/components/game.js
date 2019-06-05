@@ -62,8 +62,8 @@ export class Game extends React.Component {
         helper: 'That is an invalid guess!'
       })
     } else {
-      this.setState({
-        validGuess: guess
+      this.setState(() => {
+        return {validGuess: guess}
       })
     }
   }
