@@ -1,13 +1,10 @@
 body {
-  font-family: sans-serif;
-}
-
-a {
-  text-decoration: none;
+  font-family: fantasy;
 }
 
 label {
   display: block;
+  font-size: 16pt;
 }
 
 nav a {
@@ -18,4 +15,229 @@ nav a {
 form div {
   margin: 1em;
   display: inline-block;
+}
+
+html {
+  background: url(iron-throne.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.body {
+  color: #dfded9;
+}
+
+ul {
+  list-style-position: inside;
+  list-style: none;
+  padding: 0;
+  color: #ffeb3b;
+}
+
+#seven-kingdoms {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+li {
+  margin: 5px;
+  border: 1px #ffffff;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+}
+
+h1 {
+  color: #dfded9;
+}
+
+#heading {
+  font-size: 150%;
+}
+
+#message {
+  font-size: 125%;
+}
+
+input {
+  border: solid;
+  border-color: brown;
+  border-radius: 50%;
+  background-blend-mode: darken;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  font-size: 22px;
+  font-family: fantasy;
+  opacity: 0.5;
+  color: brown;
+  margin: 5px;
+}
+
+button {
+  background-color: #a6d7f7;
+  border-radius: 12px;
+  font-size: 16px;
+  font-family: cursive;
+  color: brown;
+  margin: 5px;
+}
+
+.circle-container {
+  display: flex;
+  margin: 5em auto 0;
+  border: solid 5px brown;
+}
+
+#gameContainer {
+  display: flex;
+}
+
+#navbarContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+#navbarComp {
+  justify-self: flex-end;
+}
+
+#navbarComp div {
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+  color: #a6d7f7;
+  text-shadow: -1px -1px 0 brown, 1px -1px 0 brown, -1px 1px 0 brown,
+    1px 1px 0 brown;
+}
+
+#title {
+  justify-self: flex-start;
+}
+
+#otherButtons {
+  display: flex;
+}
+
+#hintsDiv {
+  margin: 10px;
+  font-size: 14pt;
+  color: #a6d7f7;
+  text-shadow: -1px -1px 0 brown, 1px -1px 0 brown, -1px 1px 0 brown,
+    1px 1px 0 brown;
+  font-weight: bolder;
+}
+
+#guessesDiv {
+  margin: 10px;
+  font-size: 14pt;
+  color: #a6d7f7;
+  text-shadow: -1px -1px 0 brown, 1px -1px 0 brown, -1px 1px 0 brown,
+    1px 1px 0 brown;
+  font-weight: bolder;
+}
+
+#letsPlay a {
+  font-size: 20pt;
+}
+
+#howToPlay p {
+  font-size: 14pt;
+}
+
+#sevenKingdomsComponent {
+  justify-self: flex-end;
+  align-self: flex-end;
+  color: #a6d7f7;
+  text-shadow: -1px -1px 0 brown, 1px -1px 0 brown, -1px 1px 0 brown,
+    1px 1px 0 brown;
+  font-weight: bolder;
+  display: flex;
+  justify-content: space-around;
+  font-size: 18pt;
+}
+
+.glowing {
+  background-color: #004a7f;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Arial;
+  font-size: 20px;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  -webkit-animation: glowing 1500ms infinite;
+  -moz-animation: glowing 1500ms infinite;
+  -o-animation: glowing 1500ms infinite;
+  animation: glowing 1500ms infinite;
+}
+@-webkit-keyframes glowing {
+  0% {
+    background-color: #b20000;
+    -webkit-box-shadow: 0 0 3px #b20000;
+  }
+  50% {
+    background-color: #ff0000;
+    -webkit-box-shadow: 0 0 40px #ff0000;
+  }
+  100% {
+    background-color: #b20000;
+    -webkit-box-shadow: 0 0 3px #b20000;
+  }
+}
+
+@-moz-keyframes glowing {
+  0% {
+    background-color: #b20000;
+    -moz-box-shadow: 0 0 3px #b20000;
+  }
+  50% {
+    background-color: #ff0000;
+    -moz-box-shadow: 0 0 40px #ff0000;
+  }
+  100% {
+    background-color: #b20000;
+    -moz-box-shadow: 0 0 3px #b20000;
+  }
+}
+
+@-o-keyframes glowing {
+  0% {
+    background-color: #b20000;
+    box-shadow: 0 0 3px #b20000;
+  }
+  50% {
+    background-color: #ff0000;
+    box-shadow: 0 0 40px #ff0000;
+  }
+  100% {
+    background-color: #b20000;
+    box-shadow: 0 0 3px #b20000;
+  }
+}
+
+@keyframes glowing {
+  0% {
+    background-color: #b20000;
+    box-shadow: 0 0 3px #b20000;
+  }
+  50% {
+    background-color: #ff0000;
+    box-shadow: 0 0 40px #ff0000;
+  }
+  100% {
+    background-color: #b20000;
+    box-shadow: 0 0 3px #b20000;
+  }
 }
